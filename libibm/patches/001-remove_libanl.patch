@@ -1,0 +1,13 @@
+Index: libibm-1.0.0/Makefile
+===================================================================
+--- libibm-1.0.0.orig/Makefile
++++ libibm-1.0.0/Makefile
+@@ -323,7 +323,7 @@ paho-mqtt-download:
+ 
+ paho-mqtt-build:
+ 	echo "Build paho mqtt c"
+-	make -C paho.mqtt.c
++	make -C paho.mqtt.c GAI_LIB=""
+ 
+ tests:
+ 	make -C test
